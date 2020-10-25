@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/personal-portfoli-angular",
+            "outputPath": "dist/angular-cv",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "personal-portfoli-angular:build"
+            "browserTarget": "angular-cv:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "personal-portfoli-angular:build:production"
+              "browserTarget": "angular-cv:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "personal-portfoli-angular:build"
+            "browserTarget": "angular-cv:build"
           }
         },
         "test": {
@@ -115,15 +115,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "personal-portfoli-angular:serve"
+            "devServerTarget": "angular-cv:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "personal-portfoli-angular:serve:production"
+              "devServerTarget": "angular-cv:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "personal-portfoli-angular"
+  "defaultProject": "angular-cv"
 }
